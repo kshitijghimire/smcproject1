@@ -10,7 +10,7 @@
 
     <div class="my-5 flex justify-center gap-5">
 
-        <input type="submit" value="Add Category " class="p-2 bg-blue-500 text-white px-4 py-2 rounded cursor-pointer">
+        <input type="submit" name="store" value="Add Category " class="p-2 bg-blue-500 text-white px-4 py-2 rounded cursor-pointer">
 
 
         <a href="" class="bg-red-500 text-white px-8 py-2 rounded">Exit</a>
