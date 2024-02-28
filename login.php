@@ -11,3 +11,23 @@
 
 
 <?php include 'includes/footer.php'; ?>
+<?php
+if(isset($_POST['login']))
+{
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $password = md5($password);
+    $qry = "SELECT * FROM users WHERE email = '$email' AND password = '$password'";
+    include 'includes/dbconnection.php';
+    $result = mysqli_query($conn, $qry);
+    include 'includes/closeconnection.php';
+    if(mysqli_num_rows($result) > 0)
+    {
+        $row = mysqli_fetch_assoc($result);
+        header('location: admin/dashboard.php');
+    }
+    else
+    {
+        echo "<script>alert('Invalid Email or Password')</script>";
+    }
+}
