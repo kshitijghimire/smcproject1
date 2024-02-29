@@ -13,7 +13,7 @@ include '../includes/closeconnection.php';
 
 <h1 class="text-3xl font-bold">Products</h1>
 <hr class="my-3 h-1 bg-orange-500">
-<form action="">
+<form action="actionproduct.php" method="POST" enctype="multipart/form-data">
 
     <select name="category_id" id="" class="p-2 bg-grey-100 border rounded w-full block my-3">
     <?php while($row=mysqli_fetch_assoc($result)){?>
@@ -27,7 +27,7 @@ include '../includes/closeconnection.php';
 
     <input type="text" name="name" placeholder="Enter Product Name" class="p-2 bg-grey-100 border rounded w-full block my-3">
 
-    <input type="text" name="describtion" placeholder="Enter Describtion" class="p-2 bg-grey-100 border rounded w-full block my-3">
+    <input type="text" name="description" placeholder="Enter Description" class="p-2 bg-grey-100 border rounded w-full block my-3">
 
     <input type="text" name="price" placeholder="Enter Price" class="p-2 bg-grey-100 border rounded w-full block my-3">
 
