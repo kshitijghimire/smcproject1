@@ -1,3 +1,4 @@
+
 <?php
 $qrycat = "SELECT * FROM categories ORDER BY priority";
 include 'includes/dbconnection.php';
