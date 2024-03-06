@@ -16,7 +16,8 @@ if(isset($_POST['store']))
     move_uploaded_file($tmp_name, $filepath);
     
     include '../includes/dbconnection.php';
-    $qry = "INSERT INTO products (category_id, name, description, price, stock, status, photopath,product_date) VALUES ($category_id, '$name', '$description', $price, $stock, '$status', '$photopath','$product_date')";
+    $qry = "INSERT INTO products (category_id, name, description, price, stock, status, photopath,product_date) VALUES 
+    ($category_id, '$name', '$description', $price, $stock, '$status', '$photopath','$product_date')";
     $res = mysqli_query($conn, $qry);
     include '../includes/closeconnection.php';
     if($res)
