@@ -13,8 +13,6 @@ include 'includes/closeconnection.php';
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
 </head>
 <body>
 <?php if(isset($_SESSION['msg'])){ ?>
@@ -30,11 +28,8 @@ include 'includes/closeconnection.php';
     unset($_SESSION['msg']);
     } ?>
 
-
-
-
     <nav class="flex bg-orange-500 px-20 items-center justify-between">
-        <img src="https://icms-image.slatic.net/images/ims-web/e6ac6883https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css-1158-4663-bda4-df5a1aa066e5.png" alt="">
+        <img src="https://icms-image.slatic.net/images/ims-web/e6ac6883-1158-4663-bda4-df5a1aa066e5.png" alt="">
         <div>
             <a href="index.php" class="text-lg font-bold text-white px-5">Home</a>
             <?php
